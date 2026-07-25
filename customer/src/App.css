@@ -1,0 +1,377 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#root {
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    display: none;
+}
+
+.headerDropdown {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+span {
+    color: #8C9B7C;
+}
+
+.language select {
+    border: none;
+    background-color: #F2EEE2;
+    color: #6E491C;
+}
+
+.city select {
+    border: none;
+    background-color: #F2EEE2;
+    color: #6E491C;
+}
+
+.headerWrapper {
+    color: #6e491c;
+}
+
+.offerRow {
+    padding-top: 3px;
+    background-color: #F2EEE2;
+}
+
+.offerRow .row .col-6 {
+    font-size: 14px;
+    max-height: 28px;
+}
+
+.cardTitleM {
+    font-family: "Lato", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #6E491C;
+    text-align: center;
+    letter-spacing: -2%;
+}
+
+.realHeader {
+    height: 175px;
+    width: 100%;
+}
+
+.logo img {
+    width: 130px;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.profile_cart {
+    display: flex;
+    gap: 23px;
+}
+
+.profile_cart img {
+    border: 1px solid black;
+    border-radius: 39px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.logoSearch_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.searchBar {
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #d6d6d669;
+    gap: 25px;
+    padding: 8px 15px;
+}
+
+.searchInput {
+    border: 0;
+    width: 560px;
+    background-color: #00000000;
+    color: #6E491C;
+    font-size: 13px;
+    outline: none;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuDropdown {
+    padding: 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.menus {
+    margin-top: 28px;
+}
+
+.doctorVisitLink {
+    color: black;
+    text-decoration: none;
+}
+
+.banner {
+    position: relative;
+}
+
+.main-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.bannerText {
+    color: #6e491c;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 3rem;
+    padding-top: 3rem;
+}
+
+
+.bannerTextTail {
+    font-size: 16px;
+}
+
+.button-1 {
+    width: 215px;
+    height: 48px;
+    padding: 16px;
+    border-radius: 108px;
+    background-color: #6e491c;
+    color: white;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.button-1:hover {
+    background-color: #4d3610;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button-1:active {
+    transform: translateY(0);
+}
+
+.t1 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-2 {
+    width: 28px;
+    height: 14px;
+}
+
+.cards {
+  background-color: #F2EEE2;
+}
+.cards-title {
+    text-decoration: none;
+}
+
+button, .book-now-btn {
+  background-color: #5c4018; 
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+button:hover, .book-now-btn:hover {
+  background-color: #3d2810;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:active, .book-now-btn:active {
+  transform: translateY(0);
+}
+
+.card-img-top {
+    height: 150px;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+.footerTable {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    border-bottom: 1px solid #fff;
+}
+
+.footer {
+    background-color: rgb(144, 175, 81);
+    color: white;
+    width: 100%;
+    padding: 70px 0 6px;
+    padding-bottom: 20px;
+}
+
+.footerServices {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+.footerContact {
+    text-align: start;
+}
+
+.footerContact h2 {
+    font-weight: 400;
+}
+
+.footerLinks {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+.footerLinks li {
+    font-size: var(--para-text);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 16px;
+}
+
+.footerLink {
+    text-decoration: none;
+    color: white;
+}
+
+.footerLink:hover {
+    text-decoration: underline;
+}
+
+.footerServices h6 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+}
+
+.footerPages h6 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+}
+
+.footerPayments h6 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+}
+
+.footerPayments {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.paymentImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.copyrightLine {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.copyrightLine p {
+    margin-bottom: 0;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 20px;
+}
+
+/* Bootstrap Button Hover Effects */
+.btn {
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease !important;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-outline-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn-outline-danger:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.no-arrow:hover {
+    transform: translateY(-2px);
+}
+
+
