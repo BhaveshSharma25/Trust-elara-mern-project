@@ -1,0 +1,64 @@
+.bodyWrapper {
+    background-color: #1a4d38;
+    font-family: system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 240px;
+    min-height: 100vh;
+    background-color: #1a4d38;
+}
+
+.sidebarBrand {
+    color: #c5a880;
+    font-weight: bold;
+}
+
+.navLinkCustom {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+    cursor: pointer;
+}
+
+.navLinkCustom:hover,
+.navLinkCustom.active {
+    background-color: #235d44;
+    color: #fff;
+}
+
+.mainWrapper {
+    background-color: #fdf6ee;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    min-height: calc(100vh - 20px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 25px;
+}
+
+.topNavbar {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 12px 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.tableContainer {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Toggle Switch Colors */
+.formCheckInput:checked {
+    background-color: #1a4d38;
+    border-color: #1a4d38;
+}

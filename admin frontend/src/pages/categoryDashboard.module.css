@@ -1,0 +1,117 @@
+:root {
+    --bg-dark-green: #1a4d38;
+    --bg-light-green: #235d44;
+    --text-gold: #c5a880;
+    --main-panel-bg: #fdf6ee;
+    --btn-green: #235d44;
+}
+
+.bodyWrapper {
+    background-color: var(--bg-dark-green);
+    font-family: system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 240px;
+    min-height: 100vh;
+    background-color: var(--bg-dark-green);
+}
+
+.sidebarBrand {
+    color: var(--text-gold);
+    font-weight: bold;
+}
+
+.navLinkCustom {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+}
+
+.navLinkCustom:hover,
+.navLinkCustom.active {
+    background-color: var(--bg-light-green);
+    color: #fff;
+}
+
+.hasPopout {
+    position: relative;
+}
+
+.popoutMenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 200px;
+    background-color: var(--bg-light-green);
+    z-index: 1050;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.hasPopout:hover .popoutMenu {
+    display: block;
+}
+
+.popoutMenu::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: -8px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid var(--bg-light-green);
+}
+
+.popoutItem {
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.popoutItem:hover {
+    background-color: var(--bg-dark-green);
+    color: #fff;
+}
+
+/* Main Content Styling */
+.mainWrapper {
+    background-color: var(--main-panel-bg);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    min-height: calc(100vh - 20px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 25px;
+}
+
+.topNavbar {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 12px 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.tableContainer {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.categoryThumb {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+}
